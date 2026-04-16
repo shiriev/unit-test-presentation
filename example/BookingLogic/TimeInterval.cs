@@ -10,9 +10,6 @@ public class TimeInterval
 
     public TimeInterval(DateTime start, DateTime end)
     {
-        if (start >= end)
-            throw new ArgumentException("Start must be less than End");
-        
         Start = start;
         End = end;
     }

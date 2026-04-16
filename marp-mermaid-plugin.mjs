@@ -81,7 +81,7 @@ async function processMermaidDivCli(div) {
     return;
   }
 
-  const dirPath = ".";//await temp.mkdir("mermaid");
+  const dirPath = await temp.mkdir("mermaid");
 
   let inputFile = path.join(dirPath, "input.mmd");
   let outputFile = path.join(dirPath, "output");
